@@ -3,7 +3,7 @@
 
 For my final project for Code Academy, using Markov Chains, I decided to create a poem generator that scrapes Sonnets 1-154 of William Shakespeare from literaturepage.com and generated them into a new poem.
 
-*To run, clone this repository and run NewShakespeare.py*
+*To run, clone this repository and run newshakespeare.py*
 
 
 Codecademy Markov Chain text generator module. This is an implementation of a Markov Chain that generates random text based on content provided by the user. It is designed to be used as a local Python module for instructional purposes.
