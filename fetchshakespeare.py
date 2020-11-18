@@ -1,4 +1,4 @@
-import urllib2 
+import urllib.request, urllib.error, urllib.parse 
 from random import randint 
 from bs4 import BeautifulSoup
 
@@ -8,13 +8,13 @@ old_poems = 'http://www.literaturepage.com/read/shakespeare_sonnets-%d.html' % (
 old_poems2 = 'http://www.literaturepage.com/read/shakespeare_sonnets-%d.html' % (num)
 def fetch_data():
 	website = old_poems
-	page = urllib2.urlopen(website)
+	page = urllib.request.urlopen(website)
 	html_doc = page.read()
 	soup = BeautifulSoup(html_doc, 'html.parser')
 	textfetch = soup.find('p', attrs={'class':'readingpoetry'})
 	newtext = textfetch.text
 	website2 = old_poems2
-	page2 = urllib2.urlopen(website)
+	page2 = urllib.request.urlopen(website)
 	html_doc2 = page.read()
 	soup2 = BeautifulSoup(html_doc, 'html.parser')
 	textfetch2 = soup.find('p', attrs={'class':'readingpoetry'})
