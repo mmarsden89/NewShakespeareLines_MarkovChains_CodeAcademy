@@ -2,12 +2,6 @@
 This is the launcher to run the New Shakespeare Sonnet Generator
 """
 
-$ git init
-$ git status
-$ git add . 
-$ git status
-$ git commit -m "Initial commit"
-
 from fetchshakespeare import fetch_data
 from markov_python.cc_markov import MarkovChain
 import textwrap
@@ -22,4 +16,4 @@ get_words()
 poem_length = 100
 output = mc.generate_text(poem_length)
 output = " ".join(output)
-print textwrap.fill(output,width=35).capitalize()
+print((textwrap.fill(output,width=35).capitalize()))
